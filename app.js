@@ -1,0 +1,24 @@
+(function () {
+  const page = document.body.dataset.page;
+  const root = document.body.dataset.root || "./";
+  const c = window.CONCUSSION_CONTENT;
+  const main = document.querySelector("main");
+  const esc = (s) => String(s).replace(/[&<>\"]/g, (m) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+  const list = (items, cls="") => `<ul class="${cls}">${items.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
+  const shell = () => {
+    document.querySelectorAll("[data-root-link]").forEach(a => a.href = root + a.dataset.rootLink);
+    const button = document.querySelector(".menu-button"), nav = document.querySelector(".nav-links");
+    button.addEventListener("click", () => { const open = button.getAttribute("aria-expanded") === "true"; button.setAttribute("aria-expanded", String(!open)); nav.classList.toggle("open", !open); });
+  };
+  const renderHome = () => { const h=c.home; main.innerHTML=`
+    <section class="hero wrap"><div class="hero-copy"><p class="kicker">Health Education Resource</p><h1>${esc(h.title)}</h1><p class="lead">${esc(h.intro)}</p></div><figure class="hero-figure"><img src="${root}assets/images/cleveland-clinic-concussion.jpg" alt="Cleveland Clinic illustration showing a soccer ball impact and the brain inside a person's head."><figcaption>${esc(h.attribution)}</figcaption></figure></section>
+    <section class="safety"><div class="wrap safety-inner"><img src="${root}assets/images/safety-note-icon.jpg" alt="Warning symbol with an exclamation mark."><p>${esc(h.safety)}</p></div></section>
+    <div class="wrap reading-flow"><section><span class="section-no">01</span><h2>${esc(h.introHeading)}</h2><p>${esc(h.intro)}</p></section><section><span class="section-no">02</span><h2>${esc(h.definitionHeading)}</h2><p>${esc(h.definition)}</p></section><section><span class="section-no">03</span><h2>${esc(h.mechanismHeading)}</h2><p>${esc(h.mechanism)}</p><a class="video-card" href="${h.videoUrl}" target="_blank" rel="noopener"><span class="play">▶</span><span>${esc(h.videoLabel)}</span><span aria-hidden="true">↗</span></a></section>
+    <section><span class="section-no">04</span><h2>${esc(h.symptomsHeading)}</h2><p>${esc(h.symptoms)}</p><figure class="content-figure"><img src="${root}assets/images/ivy-rehab-post-concussion-symptoms.jpg" alt="Ivy Rehab graphic titled Common Symptoms of Post-Concussion Syndrome."><figcaption>${esc(h.ivyAttribution)}</figcaption></figure><a class="primary-button" href="${root}symptoms/">${esc(h.symptomsLink)}</a></section>
+    <section id="what-to-do" class="action-panel"><span class="section-no">05</span><h2>${esc(h.actionHeading)}</h2><p>${esc(h.actionIntro)}</p><ol>${h.actions.map(x=>`<li>${esc(x)}</li>`).join("")}</ol></section>
+    <section><span class="section-no">06</span><h2>${esc(h.importantHeading)}</h2>${list(h.important,"check-list")}</section><section id="risk-factors"><span class="section-no">07</span><h2>${esc(h.riskHeading)}</h2>${list(h.risks,"risk-grid")}</section></div>`; };
+  const renderSymptoms = () => { const s=c.symptoms; main.innerHTML=`<div class="wrap page-head"><p class="kicker">Concussion Guide</p><h1>${esc(s.title)}</h1></div><div class="wrap split-grid"><section><h2>${esc(s.physicalHeading)}</h2><p>${esc(s.physicalIntro)}</p>${list(s.physical,"symptom-list")}</section><figure class="poster"><img src="${root}assets/images/everyday-health-concussion.jpg" alt="Everyday Health infographic titled How Concussion Affects the Body."><figcaption>${esc(s.imageAttribution)}</figcaption></figure></div><section class="wrap cognitive"><h2>${esc(s.cognitiveHeading)}</h2><p>${esc(s.cognitiveIntro)}</p>${list(s.cognitive,"symptom-list two-col")}</section>`; };
+  const renderMyths = () => { const m=c.myths; main.innerHTML=`<div class="wrap page-head"><p class="kicker">Know the facts</p><h1>${esc(m.title)}</h1></div><div class="wrap myths-layout"><figure class="myths-poster"><img src="${root}assets/images/concussion-myths-debunked.png" alt="Concussion Myths Debunked infographic."></figure><div class="myth-cards">${m.items.map((x,i)=>`<article><span class="myth-tag">Myth ${i+1}</span><h2>${esc(x.heading)}</h2>${x.paragraphs.map(p=>`<p>${esc(p)}</p>`).join("")}</article>`).join("")}</div></div>`; };
+  const renderReferences = () => { main.innerHTML=`<div class="wrap page-head"><p class="kicker">Source list</p><h1>References</h1></div><ol class="wrap reference-list">${c.references.map(r=>{const u=r.match(/https?:\/\/\S+$/); if(!u)return `<li>${esc(r)}</li>`; const before=r.slice(0,u.index); return `<li>${esc(before)}<a href="${esc(u[0])}" target="_blank" rel="noopener">${esc(u[0])}</a></li>`}).join("")}</ol>`; };
+  ({home:renderHome,symptoms:renderSymptoms,myths:renderMyths,references:renderReferences}[page]||renderHome)(); shell();
+})();

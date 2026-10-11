@@ -1,0 +1,86 @@
+{
+  "pageId": "home",
+  "title": "Concussions  ",
+  "sections": [
+    {
+      "id": "hero",
+      "image": "assets/images/cleveland-clinic-concussion.jpg",
+      "imageAttribution": "Cleveland Clinic, 2024 "
+    },
+    {
+      "id": "safety-note",
+      "icon": "assets/images/safety-note-icon.jpg",
+      "text": " Safety Note : This page should only be used for informational purposes, not for diagnosis and treatment and is not a substitute for medical advice. If you are facing any symptoms of a concussion, please go to get checked immediately."
+    },
+    {
+      "id": "page-intro",
+      "heading": "What is this page about ",
+      "body": "This page explains what a concussion is, how it happens, why it should be taken seriously and how you can identify it. This page is written for adolescents and young athletes."
+    },
+    {
+      "id": "definition",
+      "heading": "What is a concussion?",
+      "body": "A concussion is a type of traumatic brain injury (TBI) (CDC,2025). It affects the abilties of the brain.While concussions are usually known as minor brain injuries, this condition needs to be taken seriously because it influences one's health and well being."
+    },
+    {
+      "id": "mechanism",
+      "heading": "How Does a Concussion Occur?",
+      "body": "A concussion occurs  when the head moves suddenly and then causes the brain to move accordingly.(CDC,2005). The brain ends up moving around or bouncing in the skull due to sudden force that leads to stretching of the brain tissues and causing chemical changes(Tator,2013).One can sustain this brain injury even when the head is not hit(Cleveland Clinic, 2024).",
+      "video": {
+        "label": "What happens when you have a concussion? - Clifford Robbins",
+        "url": "https://www.youtube.com/watch?v=xvjK-4NXRsM"
+      }
+    },
+    {
+      "id": "symptoms",
+      "heading": "Symptoms ",
+      "body": "The symptoms of a concussion may vary depending on the individual. Some of the symptoms may occur soon after the concussion happens, whereas others may only appear after several hours or days(Mayo Clinic,2022). Symptoms can be felt physically, in thinking abilities, emotions, behavior and sleeping habits.(CDC,2024)",
+      "image": "assets/images/ivy-rehab-post-concussion-symptoms.jpg",
+      "imageAttribution": "Ivy Rehab , 2025",
+      "pageLink": { "label": "Link to Symptoms Page", "url": "symptoms.html" }
+    },
+    {
+      "id": "what-to-do",
+      "heading": "WHAT TO DO IF YOU THINK YOU HAVE A CONCUSSION",
+      "items": [
+        "Stop participating in physical activities and don’t continue on the same day(CDC, 2025)",
+        "Tell an adult(CDC, 2025)",
+        "Seek advice from a medical professional(CDC, 2025)"
+      ]
+    },
+    {
+      "id": "important-to-know",
+      "heading": "Important To Know  ",
+      "items": [
+        "Most individuals who sustain a concussion recover, but it takes different amounts of time for every individual (CDC, 2025).",
+        "Individuals who have a suspected concussion need to refrain from participating in physical activities, including sport activities, and get themselves checked by a health care practitioner(CDC, 2025).",
+        "Second head impact when an individual has not recovered from the first one makes the situation worse(Tator, 2013)."
+      ]
+    },
+    {
+      "id": "risk-factors",
+      "heading": "Risk Factors(Orlando Health, 2019)",
+      "items": [
+        "Age and Gender",
+        "Previous Concussions",
+        "Sports and Physical Activity",
+        "Equipment and playing conditions"
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "items": [
+        "CDC. (2024). Signs and symptoms of concussion. In HEADS UP. https://www.cdc.gov/heads-up/signs-symptoms/index.html",
+        "CDC. (2025). Concussion basics. In HEADS UP. https://www.cdc.gov/heads-up/about/index.html",
+        "Cleveland Clinic. (2024). Concussion: Causes, symptoms, diagnosis, treatments, prevention. Cleveland Clinic. https://my.clevelandclinic.org/health/diseases/15038-concussion",
+        "Concussions in children. (2025). Childrenshospital.org. https://www.childrenshospital.org/conditions-treatments/concussions",
+        "Harvard Health Publishing. (2026, January 22). Concussion — Harvard Health. https://www.health.harvard.edu/a_to_z/concussion-a-to-z",
+        "Mayo Clinic Staff. (2022). Concussion — symptoms and causes. Mayo Clinic. https://www.mayoclinic.org/diseases-conditions/concussion/symptoms-causes/syc-20355594",
+        "Tator, C. (2013). Concussions and their consequences: Current diagnosis, management and prevention. Canadian Medical Association Journal, 185(11), 975–979. https://doi.org/10.1503/cmaj.120039",
+        "Ivy Rehab. (2025). Treatment for post-concussion syndrome. https://ivyrehab.com/health-resources/concussion/treatment-for-post-concussion-syndrome/",
+        "Everyday Health. (2022). Concussion symptoms. https://www.everydayhealth.com/concussion/symptoms/"
+      ]
+    }
+  ]
+}
