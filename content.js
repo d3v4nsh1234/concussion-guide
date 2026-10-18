@@ -51,6 +51,30 @@ window.CONCUSSION_CONTENT = {
       {heading: "Myth 3 - Symptoms show up right away", paragraphs: ["This is only partly true. Many symptoms start right after the injury, but some may take up to a few days to appear (American Academy of Pediatrics, 2024), and some may start days or weeks later (MedlinePlus, 2025).", "This is important because if a person assumes they are fine straight after a hit, they may go back to sport too early. Anyone who has had a hit to the head should stop the activity, tell an adult and see a health care provider (CDC, 2025)."]}
     ]
   },
+  about: {
+    title: "About This Project",
+    project: [
+      "In the start, I set out to find out how I can make a difference for people through medicine and what I could do. This is why I thought about concussions, as that is a topic which happens a lot to adolescents, which is why I created a website on concussions, its effects and the basic information you need for it.",
+      "This site helps answer the question of what concussions are and what some symptoms of a concussion are, either cognitive or physical. It also answers questions about common concussion myths, why they are false and what the corrected information is.",
+      "My research question is: How do concussions affect adolescents playing sports at a young age, and what should they do if they face symptoms, an emergency or a suspected concussion?"
+    ],
+    audienceHeading: "Who This Is For, and Why It Matters",
+    audience: "This site is for parents of teenagers who regularly play sports and for adolescents who need to know what to do if they feel any symptom of a concussion. This is significant because concussions can become very serious, and everyone needs to be aware of the problem.",
+    sourcesHeading: "How I Chose My Sources",
+    sources: "To determine whether a source was reliable, I checked whether it was a government or medical website, when it was written and whether the organization was well known. For example, the CDC was a reliable source because it is a national public-health organization with trustworthy statistics.",
+    comparisonHeading: "What I Found When I Compared Sources",
+    comparisons: [
+      "CDC: Concussion signs and symptoms may not show up right away; they may take hours or days to appear or be noticed. Spotting a possible concussion may be harder in young children and some children with disabilities because they may not be able to communicate or express how they feel.",
+      "MedlinePlus: Symptoms of a concussion may not start right away; they may start days or weeks after the injury."
+    ],
+    comparisonReflection: "Reliable sources can say different things because their research and audiences may differ. For example, one source may focus on adolescents while another focuses on very young children. On this site, each timing statement is presented with its source so readers can understand the context.",
+    writingHeading: "What I Learned About Writing Health Information for Teenagers",
+    writing: "I learned that the way you write a website differs based on the audience. Because my target audience is teenagers, I present information simply and in a straightforward manner. It was crucial to make sure teenagers could understand the content without needing extra research, so some information had to be simplified.",
+    aiHeading: "How I Used AI",
+    ai: "I used AI to help check sources, find papers, journals and websites with accurate information, and receive feedback on how to improve the website. I checked the information and wrote the website content myself.",
+    limitsHeading: "What This Site Does Not Do",
+    limits: "This site does not diagnose concussions and is only suitable for providing researched information. If a concussion is suspected, stop physical activity, tell an adult and approach a health care professional. Readers should not rely only on this site for medical decisions."
+  },
   references: [
     "American Academy of Pediatrics. (2024, December 5). Concussions in children & teens: What parents need to know. HealthyChildren.org. https://www.healthychildren.org/English/health-issues/injuries-emergencies/sports-injuries/Pages/Concussions.aspx",
     "Centers for Disease Control and Prevention. (2024). Signs and symptoms of concussion. HEADS UP. https://www.cdc.gov/heads-up/signs-symptoms/index.html",
